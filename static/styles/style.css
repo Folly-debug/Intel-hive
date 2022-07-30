@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    scroll-behavior: smooth;
+}
+section
+{
+    padding: 100px;
+}
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+/* header .logo
+{
+    color: rgb(49, 116, 233);
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 3px;
+    position: relative;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 5px;
+} */
+/* header .logo:hover
+{
+    color: rgb(16, 9, 112);
+} */
+/* header .logo:before{
+    content: "Intel Hive";
+    position: absolute;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    width: 100%;
+    height: 100%;
+    color: rgb(13, 67, 133);
+    overflow: hidden;
+    animation: animate 4s infinite;
+}
+@keyframes animate {
+    0% {
+    width: 0%;
+    }
+    50% {
+    width: 100%;
+    }
+    100% {
+        width: 0%;
+    }
+} */
+.banner{
+    position: relative;
+    min-height: 100vh;
+    background-image: url("../cyber.jpg");
+    background-size: cover;
+    background-position: right;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /*to change later*/
+    align-items: center;
+}
+.banner h2{
+    font-size: 3em;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.5em;
+}
+.banner h2 span{
+    font-size: 1em;
+    font-weight: 500;
+}
+.banner h3{
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 500;
+}
+.banner p{
+    font-size: 2em;
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+.btn{
+    position: relative;
+    display: inline-block;
+    background-color: transparent;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+}
+.btn:hover{
+    background-color:#fff;
+}
+.btn:active{
+    opacity: 0.6;
+}
+.custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+.custom-file-input::before {
+    content: 'BROWSE FILE';
+    color: #fff;
+    display: inline-block;
+    background: -webkit-linear-gradient(top);
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 10pt;
+}
+.custom-file-input:hover::before {
+    border-color:#fff;
+}
+.custom-file-input:active {
+   outline: 0;
+}
+.custom-file-input:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9); 
+}
+.btn1{
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+.upbtn{
+    margin-top: 2%;
+    margin-left: 26%;
+}
+#myProgress {
+    width: 44.5%;
+    background-color: grey;
+    position: absolute;
+    margin-top: 17%;
+  }
+  
+#myBar {
+    width: 5%;
+    height: 20px;
+    background-color: #04AA6D;
+    text-align: center; 
+    line-height: 30px; 
+    color: white;
+  }
+#cnt{
+    position: absolute;
+    top: 56.8%;
+    left: 33%;
+}
+.bbtn {
+    display: none; /*hide initially*/
+    padding: 8px 16px;
+    margin-top: 25%;
+    margin-left: 5%;
+    position: absolute;
+    width: 35%;
+    background-color: transparent;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+    box-shadow: 0 6px 6px #fff;
+  }
+.bbtn:hover{
+    background-color:#fff;
+}
+.bbtn:active{
+    opacity: 0.6;
+}
+
+/* responsive */
+@media (max-width: 991px)
+{
+    header{
+        padding: 20px 50px;
+        z-index: 1000;
+    }
+    .banner{
+        align-items: flex-start;
+    }
+    section{
+        padding: 100px 50px;
+    }
+    .banner{
+        padding: 150px 50px 100px;
+    }
+    .banner h2{
+        font-size: 1.5em;
+    }
+    .banner h3{
+        font-size: 1em;
+    }
+    .btn{
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .btn1{
+        margin-top: 12%;
+    }
+    .bbtn{
+        margin-top: 30%;
+        margin-left: 35px;
+        
+    }
+    .banner p{
+        font-size: 1.5em;
+        font-weight: 500;
+        line-height: 1.5em; 
+    }
+    .banner #cnt{
+        top: 75%;
+        left: 98%;
+    }
+    #myProgress{
+        top: 25%;
+        width: 38%;
+    }
+}
+@media (max-width: 720px)
+{
+    header{
+        padding: 20px 20px;
+    }
+    .btn{
+        border-radius: 10px;
+        left: 47%;
+        bottom: 10%;
+    }
+    .btn1{
+        margin-top: 12%;
+    }
+    .bbtn{
+        margin-top: 70%;
+        margin-left: 56%;
+    }
+    .banner{
+        padding: 150px 20px 100px;
+    }
+    .banner p{
+        font-size: 1.5em;
+        font-weight: 500;
+        line-height: 1.5em; 
+    }
+    .banner #cnt{
+        top: 75%;
+        left: 98%;
+    }
+    section{
+        padding: 100px 250px;
+    }    
+    .textBx{
+        position: relative;
+        bottom: 20px;
+        margin-top: 25%;
+    }
+    #myProgress{
+        top: 48%;
+        width: 91.5%;
+    }
+    
+}
